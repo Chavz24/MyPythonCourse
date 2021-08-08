@@ -4,6 +4,7 @@ import openpyxl
 wb = openpyxl.Workbook()
 sheet = wb['Sheet']
 
+
 for i in range(1,11):
     sheet['A'+str(i)]=i
 
@@ -14,6 +15,7 @@ chart_obj.title='My chart'
 chart_obj.append(series_obj)
 
 sheet.add_chart(chart_obj,'C6')
+
 
 
 wb.save('mychartobj.xlsx')
