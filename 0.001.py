@@ -6,7 +6,7 @@ from pathlib import Path
 working_folder=Path(r'C:/Users/migue/Desktop/Nueva carpeta')
 copy_folder=Path(r'C:/Users/migue/Desktop/Copia')
 alphabets=list(string.ascii_uppercase)
-print(alphabets[1])
+
 
 #Regex para identificar archivos a renombrar.
 
@@ -23,10 +23,10 @@ for file in os.listdir(working_folder):
         file_name=rename_files.group(3).replace(' ', '_')
         file_extention=rename_files.group(4)
         #print(file_name)
-        new_name=f'{alphabets[count]}_{file_name}{file_extention}'
+        new_name=f'{alphabets[count]}_{file_name.capitalize()}{file_extention}'
 
-        print(working_folder/f'{file}',copy_folder/f'{new_name.capitalize()}')
-        shutil.copy(working_folder/f'{file}',copy_folder/f'{new_name}')
+        print(working_folder/f'{file}',copy_folder/f'{new_name}')
+        shutil.move(working_folder/f'{file}',copy_folder/f'{new_name}')
         count+=1
     except AttributeError:
         continue

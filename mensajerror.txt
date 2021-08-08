@@ -1,9 +1,0 @@
-Traceback (most recent call last):
-  File "C:/Users/migue/PycharmProjects/MyPythonCourse/0.000.py", line 9, in <module>
-    una_funcion()
-  File "C:/Users/migue/PycharmProjects/MyPythonCourse/0.000.py", line 5, in una_funcion
-    esto_es_un_test()
-  File "C:\Users\migue\PycharmProjects\MyPythonCourse\A1.py", line 6, in esto_es_un_test
-    raise Exception('Esto es un test')
-Exception: Esto es un test
-
