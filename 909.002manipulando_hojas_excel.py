@@ -9,7 +9,7 @@ for i in range(1,11):
 
 rej_obj=openpyxl.chart.Reference(sheet,min_row=1,min_col=1,max_row=10,max_col=1)
 series_obj=openpyxl.chart.Series(rej_obj,title='Uno')
-chart_obj=openpyxl.chart.PieChart()
+chart_obj=openpyxl.chart.BarChart()
 chart_obj.title='My chart'
 chart_obj.append(series_obj)
 
