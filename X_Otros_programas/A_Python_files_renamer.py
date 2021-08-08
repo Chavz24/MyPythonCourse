@@ -5,6 +5,7 @@ from pathlib import Path
 
 
 
+
 working_folder=Path(r'C:/Users/migue/Desktop/Nueva carpeta')
 copy_folder=Path(r'C:/Users/migue/Desktop/Copia')
 alphabets=list(string.ascii_uppercase)
