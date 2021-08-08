@@ -1,7 +1,9 @@
+"""Este programa le cambia el formato de nombre a los 'scripts' de python a un formato estandar"""
+
 import os, shutil,re, string
 from pathlib import Path
 
-#shutil.copy(folder1/'prueba1.txt',folder2/'prueba5.txt')
+
 
 working_folder=Path(r'C:/Users/migue/Desktop/Nueva carpeta')
 copy_folder=Path(r'C:/Users/migue/Desktop/Copia')
