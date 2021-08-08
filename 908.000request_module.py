@@ -1,0 +1,12 @@
+import requests
+
+res= requests.get('https://automatetheboringstuff.com/files/rj.txt')
+res.raise_for_status()
+
+
+play_file=open(f'C:/Users/migue/Desktop/Romeo and Juliet.txt','wb')
+
+for i in res.iter_content(100000):
+    play_file.write(i)
+
+
