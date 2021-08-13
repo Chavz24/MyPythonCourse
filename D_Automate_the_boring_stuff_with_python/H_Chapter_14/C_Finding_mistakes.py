@@ -1,4 +1,4 @@
-"""Este programa buca un error en un googlesheet y le indica al usuario la celda
+"""Este programa busca un error en un googlesheet y le indica al usuario la celda
     donde esta el error"""
 
 import ezsheets
