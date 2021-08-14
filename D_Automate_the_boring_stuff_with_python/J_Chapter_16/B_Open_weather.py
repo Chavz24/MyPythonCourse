@@ -1,6 +1,6 @@
 #!python
 
-APPID='67f4736a67704c00faf7f9f26fa8dae8'
+APPID='api_here'
 
 from json import loads,dumps
 from requests import get
@@ -14,7 +14,7 @@ if len(argv)<2:
     exit()
 
 location=' '.join(argv[1:])
-#location='SanTo Domingo,DO'
+
 
 #Downloading the JSON data from the weather page
 
