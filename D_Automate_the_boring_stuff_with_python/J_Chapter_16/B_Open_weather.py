@@ -14,7 +14,7 @@ if len(argv)<2:
     exit()
 
 location=' '.join(argv[1:])
-#location='SanTo Domingo,DO'
+
 
 #Downloading the JSON data from the weather page
 
