@@ -1,6 +1,6 @@
 """Uso esto para convertir la direcion del archivo estilo window a estilo unix"""
 
-path_win_list=[r'C:\Users\migue\PycharmProjects\MyPythonCourse\Z_archivos\automate_online-materials\excelSpreadsheets']
+path_win_list=[r'']
 path_unix_list=[]
 
 for path in path_win_list:
