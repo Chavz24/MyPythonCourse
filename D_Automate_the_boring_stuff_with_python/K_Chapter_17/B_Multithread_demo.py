@@ -16,5 +16,7 @@ def pausa():
     print('Se acabo la pausa')
 
 thread_obj=threading.Thread(target=pausa)
-thread_obj.start()
+
+thread_obj.start()#second thread
+
 print('Final del programa')
