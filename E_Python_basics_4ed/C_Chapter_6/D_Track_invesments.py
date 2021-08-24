@@ -30,7 +30,7 @@ while True:
         user_years=int(input('Ingrese los anos: '))
         break
     except:
-        print('Ingrese el ano en numero, por favor.')
+        print('Ingrese el ano en numero entero, por favor.')
 
 invest(user_amount,user_rate,user_years)
 
