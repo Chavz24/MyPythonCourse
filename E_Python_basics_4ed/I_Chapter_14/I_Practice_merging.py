@@ -9,9 +9,7 @@ from pathlib import Path
 # .append()
 
 
-# path_to_files = Path(
-#     'F:/A_Practicas_python/A_Python_basics_4ed/python-basics-exercises-master/ch14-interact-with-pdf-files/'
-#     'practice_files/Merge')
+# path_to_files = Path()
 #
 # pdf_merger = PdfFileMerger()
 # pdf_to_merge = [path for path in path_to_files.glob('*.pdf') if not path.name == 'merge3.pdf']
@@ -27,12 +25,9 @@ from pathlib import Path
 # you made in exercise 1. Save the new file to your home directory
 # as merged.pdf.
 
-path_to_file = Path(
-    r'C:\Users\migue\PycharmProjects\MyPythonCourse\E_Python_basics_4ed\I_Chapter_14\II_concatenated.pdf')
+path_to_file = Path()
 
-pdf_to_merge = Path(
-    'F:/A_Practicas_python/A_Python_basics_4ed/python-basics-exercises-master/ch14-interact-with-pdf-files/'
-    'practice_files/Merge/merge3.pdf')
+pdf_to_merge = Path()
 
 pdf_merger = PdfFileMerger()
 pdf_merger.append(str(path_to_file))

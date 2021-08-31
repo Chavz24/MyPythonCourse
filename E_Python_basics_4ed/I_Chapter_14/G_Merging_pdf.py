@@ -1,8 +1,7 @@
 from PyPDF2 import PdfFileMerger
 from pathlib import Path
 
-path1 = Path('F:/A_Practicas_python/A_Python_basics_4ed/python-basics-exercises-master/ch14-interact-with-pdf-files/'
-             'practice_files/expense_reports')
+path1 = Path()
 
 pdf_merger = PdfFileMerger()
 

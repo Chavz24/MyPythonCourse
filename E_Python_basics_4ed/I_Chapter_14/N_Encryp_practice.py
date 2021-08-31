@@ -7,9 +7,7 @@ from PyPDF2 import PdfFileReader, PdfFileWriter
 # top_secret.pdf. Using PdfFileWriter.encrypt(), encrypt the file with
 # the user password Unguessable.
 
-path_to_file = Path(
-    'F:/A_Practicas_python/A_Python_basics_4ed/python-basics-exercises-master/ch14-interact-with-pdf-files/'
-    'practice_files/top_secret.pdf')
+path_to_file = Path()
 
 pdf_reader = PdfFileReader(str(path_to_file))
 pdf_writer = PdfFileWriter()

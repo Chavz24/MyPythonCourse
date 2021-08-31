@@ -2,9 +2,7 @@ from copy import deepcopy
 from pathlib import Path
 from PyPDF2 import PdfFileReader, PdfFileWriter
 
-path_to_file = Path(
-    'F:/A_Practicas_python/A_Python_basics_4ed/python-basics-exercises-master/ch14-interact-with-pdf-files/'
-    'practice_files/half_and_half.pdf')
+path_to_file = Path()
 
 pdf_reader = PdfFileReader(str(path_to_file))
 pdf_writer = PdfFileWriter()
