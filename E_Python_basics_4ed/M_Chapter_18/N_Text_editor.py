@@ -1,11 +1,11 @@
 """Example App: Text Editor 18.9"""
 
 # An app that lets you create a text and save it.
-# TODO:add exception handling for unicodeerror and permisionerror.
-# TODO:add exception handling for when the user tries to save the file in another format.
+
 import tkinter as tk
 from tkinter.filedialog import askopenfilename
 from tkinter.filedialog import asksaveasfilename
+from tkinter import messagebox
 
 
 def open_file():
@@ -15,7 +15,8 @@ def open_file():
     )
     if not filepath:
         return
-
+    elif not filepath.endswith(".txt"):
+        return messagebox.showerror("Error", "Can only open files with .txt extension.")
     txt_edit.delete("1.0", tk.END)
 
     with open(filepath, mode="r", encoding="utf-8") as input_file:
@@ -35,6 +36,8 @@ def save_file():
 
     if not filepath:
         return
+    elif not filepath.endswith(".txt"):
+        return messagebox.showerror("Error", "Can only save files with .txt extension.")
     with open(filepath, mode="w", encoding="utf-8") as output_file:
         text = txt_edit.get("1.0", tk.END)
         output_file.write(text)

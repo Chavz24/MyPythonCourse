@@ -2,6 +2,7 @@
 
 import tkinter as tk
 from OO_Generate_button import generate_button
+from OO_Save_button import save_button
 
 window = tk.Tk()
 
@@ -179,7 +180,7 @@ lbl_poem.grid(
 btn_save_poem = tk.Button(
     master=frm_poem,
     text="Save to file",
-    command=None  # TODO
+    command=save_button
 )
 btn_save_poem.grid(
     row=1,
